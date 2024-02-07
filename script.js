@@ -97,7 +97,7 @@ function drawText() {
     opacity = opacity + 0.01;
   }
   //fades out the text by decreasing the opacity
-  if (frameNumber >= 100 && frameNumber < 400) {
+  if (frameNumber >= 100 && frameNumber < 200) {
     context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
     context.fillText(
       "everyday day I cannot believe how lucky I am",
@@ -108,10 +108,10 @@ function drawText() {
   }
 
   //needs this if statement to reset the opacity before next statement on canvas
-  if (frameNumber == 400) {
+  if (frameNumber == 200) {
     opacity = 0;
   }
-  if (frameNumber > 400 && frameNumber < 700) {
+  if (frameNumber > 200 && frameNumber < 300) {
     context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
 
     if (window.innerWidth < 400) {
@@ -132,7 +132,7 @@ function drawText() {
 
     opacity = opacity + 0.01;
   }
-  if (frameNumber >= 700 && frameNumber < 1000) {
+  if (frameNumber >= 300 && frameNumber < 400) {
     context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
 
     if (window.innerWidth < 600) {
@@ -154,106 +154,106 @@ function drawText() {
     opacity = opacity - 0.01;
   }
 
+  if (frameNumber == 400) {
+    opacity = 0;
+  }
+  if (frameNumber > 400 && frameNumber < 500) {
+    context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
+    context.fillText(
+      "to be alive, and to get to spend this life with you",
+      canvas.width / 2,
+      canvas.height / 2
+    );
+    opacity = opacity + 0.01;
+  }
+  if (frameNumber >= 500 && frameNumber < 600) {
+    context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
+    context.fillText(
+      "to be alive, and to get to spend this life with you",
+      canvas.width / 2,
+      canvas.height / 2
+    );
+    opacity = opacity - 0.01;
+  }
+
+  if (frameNumber == 600) {
+    opacity = 0;
+  }
+  if (frameNumber > 600 && frameNumber < 700) {
+    context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
+    context.fillText(
+      "is so incredibly, unfathomably unlikely",
+      canvas.width / 2,
+      canvas.height / 2
+    );
+    opacity = opacity + 0.01;
+  }
+  if (frameNumber >= 700 && frameNumber < 800) {
+    context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
+    context.fillText(
+      "is so incredibly, unfathomably unlikely",
+      canvas.width / 2,
+      canvas.height / 2
+    );
+    opacity = opacity - 0.01;
+  }
+
+  if (frameNumber == 800) {
+    opacity = 0;
+  }
+  if (frameNumber > 800 && frameNumber < 900) {
+    context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
+
+    if (window.innerWidth < 600) {
+      drawTextWithLineBreaks(
+        [
+          "and yet here I am to get the impossible",
+          "chance to get to know you",
+        ],
+        canvas.width / 2,
+        canvas.height / 2,
+        fontSize,
+        lineHeight
+      );
+    } else {
+      context.fillText(
+        "and yet here I am to get the impossible chance to get to know you",
+        canvas.width / 2,
+        canvas.height / 2
+      );
+    }
+
+    opacity = opacity + 0.01;
+  }
+  if (frameNumber >= 900 && frameNumber < 1000) {
+    context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
+
+    if (window.innerWidth < 600) {
+      drawTextWithLineBreaks(
+        [
+          "and yet here I am to get the impossible",
+          "chance to get to know you",
+        ],
+        canvas.width / 2,
+        canvas.height / 2,
+        fontSize,
+        lineHeight
+      );
+    } else {
+      context.fillText(
+        "and yet here I am to get the impossible chance to get to know you",
+        canvas.width / 2,
+        canvas.height / 2
+      );
+    }
+
+    opacity = opacity - 0.01;
+  }
+
   if (frameNumber == 1000) {
     opacity = 0;
   }
-  if (frameNumber > 1000 && frameNumber < 1300) {
-    context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
-    context.fillText(
-      "to be alive, and to get to spend this life with you",
-      canvas.width / 2,
-      canvas.height / 2
-    );
-    opacity = opacity + 0.01;
-  }
-  if (frameNumber >= 1300 && frameNumber < 1600) {
-    context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
-    context.fillText(
-      "to be alive, and to get to spend this life with you",
-      canvas.width / 2,
-      canvas.height / 2
-    );
-    opacity = opacity - 0.01;
-  }
-
-  if (frameNumber == 1600) {
-    opacity = 0;
-  }
-  if (frameNumber > 1600 && frameNumber < 1900) {
-    context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
-    context.fillText(
-      "is so incredibly, unfathomably unlikely",
-      canvas.width / 2,
-      canvas.height / 2
-    );
-    opacity = opacity + 0.01;
-  }
-  if (frameNumber >= 1900 && frameNumber < 2200) {
-    context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
-    context.fillText(
-      "is so incredibly, unfathomably unlikely",
-      canvas.width / 2,
-      canvas.height / 2
-    );
-    opacity = opacity - 0.01;
-  }
-
-  if (frameNumber == 2200) {
-    opacity = 0;
-  }
-  if (frameNumber > 2200 && frameNumber < 2400) {
-    context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
-
-    if (window.innerWidth < 600) {
-      drawTextWithLineBreaks(
-        [
-          "and yet here I am to get the impossible",
-          "chance to get to know you",
-        ],
-        canvas.width / 2,
-        canvas.height / 2,
-        fontSize,
-        lineHeight
-      );
-    } else {
-      context.fillText(
-        "and yet here I am to get the impossible chance to get to know you",
-        canvas.width / 2,
-        canvas.height / 2
-      );
-    }
-
-    opacity = opacity + 0.01;
-  }
-  if (frameNumber >= 2500 && frameNumber < 2800) {
-    context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
-
-    if (window.innerWidth < 600) {
-      drawTextWithLineBreaks(
-        [
-          "and yet here I am to get the impossible",
-          "chance to get to know you",
-        ],
-        canvas.width / 2,
-        canvas.height / 2,
-        fontSize,
-        lineHeight
-      );
-    } else {
-      context.fillText(
-        "and yet here I am to get the impossible chance to get to know you",
-        canvas.width / 2,
-        canvas.height / 2
-      );
-    }
-
-    opacity = opacity - 0.01;
-  }
-
-  if (frameNumber == 3000) {
-    opacity = 0;
-  }
-  if (frameNumber > 2800 && frameNumber < 99999) {
+  if (frameNumber > 1000 && frameNumber < 99999) {
     context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
 
     if (window.innerWidth < 600) {
@@ -278,7 +278,7 @@ function drawText() {
     opacity = opacity + 0.01;
   }
 
-  if (frameNumber >= 3100 && frameNumber < 99999) {
+  if (frameNumber >= 1100 && frameNumber < 99999) {
     context.fillStyle = `rgba(255, 255, 255, ${secondOpacity})`;
 
     if (window.innerWidth < 600) {
@@ -303,7 +303,7 @@ function drawText() {
     secondOpacity = secondOpacity + 0.01;
   }
 
-  if (frameNumber >= 3400 && frameNumber < 99999) {
+  if (frameNumber >= 1200 && frameNumber < 99999) {
     context.fillStyle = `rgba(255, 255, 255, ${thirdOpacity})`;
     context.fillText(
       "Will You Be Mine Taniya?",
